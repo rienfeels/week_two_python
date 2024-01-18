@@ -52,9 +52,9 @@ print(Dee_Ann.num_unique_people_greeted())  # Output: 0
 Jordan.add_friend(Sonny)
 Sonny.add_friend(Jordan)
 
-# Get the number of friends using the num_friends method
-print(Jordan.num_friends())  # Output: 1
-print(Sonny.num_friends())   # Output: 1
+# Get the number of friends using the num_friends method with the person's name
+print(f"{Jordan.name} has {Jordan.num_friends()} friends.")  # Output: Jordan has 1 friend
+print(f"{Sonny.name} has {Sonny.num_friends()} friends.")   # Output: Sonny has 1 friend
 
 Sonny.print_contact_info()
 print('Sonny\'s contact info - Email: %s, Phone: %s' % (Sonny.email, Sonny.phone))
